@@ -37,7 +37,7 @@ S -> (0, -1)
 
 */
 
-const moveHover = (position, commands) => {
+const moveRover = (position, commands) => {
     if (commands.length === 0) return position;
 
     let [ x, y, direction ] = position.split(':');
@@ -88,5 +88,5 @@ const moveHover = (position, commands) => {
 }
 
 module.exports = {
-    main: moveHover
+    main: moveRover
 }
